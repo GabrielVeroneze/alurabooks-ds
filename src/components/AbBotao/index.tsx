@@ -15,8 +15,8 @@ const BotaoEstilizado = styled.button`
     }
 `
 
-const AbBotao = () => {
-  return <BotaoEstilizado>Clique aqui!</BotaoEstilizado>;
+export const AbBotao = () => {
+    return (
+        <BotaoEstilizado>Clique aqui!</BotaoEstilizado>
+    )
 };
-
-export default AbBotao;
