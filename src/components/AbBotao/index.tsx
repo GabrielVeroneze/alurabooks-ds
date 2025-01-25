@@ -1,7 +1,8 @@
-import React from 'react';
+import React from 'react'
+import { Botao } from './styled'
 
 export const AbBotao = () => {
     return (
-        <BotaoEstilizado>Clique aqui!</BotaoEstilizado>
+        <Botao>Clique aqui!</Botao>
     )
-};
+}
