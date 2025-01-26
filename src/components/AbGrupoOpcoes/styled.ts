@@ -13,28 +13,28 @@ export const Opcao = styled.section<{ selecionado: boolean }>`
     justify-content: space-evenly;
     min-height: 88px;
     width: 194px;
-`
 
-export const Header = styled.header<{ selecionado: boolean }>`
-    color: ${({ selecionado }) => selecionado ? '#FFFFFF' : '#eb9b00'};
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: center;
-`
+    header {
+        color: ${({ selecionado }) => selecionado ? '#FFFFFF' : '#eb9b00'};
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: center;
+    }
 
-export const Preco = styled.div<{ selecionado: boolean }>`
-    color: ${({ selecionado }) => selecionado ? '#FFFFFF' : '#eb9b00'};
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    text-align: center;
-`
+    div {
+        color: ${({ selecionado }) => selecionado ? '#FFFFFF' : '#eb9b00'};
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: center;
+    }
 
-export const Formatos = styled.footer<{ selecionado: boolean }>`
-    color: ${({ selecionado }) => selecionado ? '#FFFFFF' : '#0000008a'};
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: center;
+    footer {
+        color: ${({ selecionado }) => selecionado ? '#FFFFFF' : '#0000008a'};
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: center;
+    }
 `
