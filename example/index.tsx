@@ -1,15 +1,16 @@
 import 'react-app-polyfill/ie11'
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-import { AbBotao, Card } from '../src'
+import { AbBotao, AbCard, AbTag } from '../src'
 
 const App = () => {
     return (
         <div>
-            <AbBotao />
-            <Card>
+            <AbBotao texto="Clique Aqui!" tipo="primario" />
+            <AbCard>
                 <h1>Olá, eu sou um card</h1>
-            </Card>
+            </AbCard>
+            <AbTag texto="Tag" />
         </div>
     )
 }
