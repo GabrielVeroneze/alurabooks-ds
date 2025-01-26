@@ -1,11 +1,11 @@
 import React, { ReactNode } from 'react'
 import { CardWrapper } from './styled'
 
-export interface CardProps {
+export interface AbCardProps {
     children: ReactNode
 }
 
-export const Card = ({ children }: CardProps) => {
+export const AbCard = ({ children }: AbCardProps) => {
     return (
         <CardWrapper>{children}</CardWrapper>
     )
