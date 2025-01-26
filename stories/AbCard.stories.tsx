@@ -1,16 +1,16 @@
 import React from 'react'
 import { ComponentMeta } from '@storybook/react'
-import { Card } from '../src/components/Card'
+import { AbCard } from '../src/components/AbCard'
 
 export default {
     title: 'Componentes/Card',
-    component: Card
-} as ComponentMeta<typeof Card>
+    component: AbCard
+} as ComponentMeta<typeof AbCard>
 
 export const CardComponent = () => {
     return (
-        <Card>
+        <AbCard>
             <h1>Olá, eu sou um card</h1>
-        </Card>
+        </AbCard>
     )
 }
