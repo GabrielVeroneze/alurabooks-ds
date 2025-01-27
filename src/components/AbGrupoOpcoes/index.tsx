@@ -1,26 +1,27 @@
 import React from 'react'
 import { Opcao } from './styled'
 
-export interface AbGrupoOpcoesProps {}
+export interface AbGrupoOpcao {
+    id: number
+    titulo: string
+    corpo: string
+    rodape: string
+}
 
-export const AbGrupoOpcoes = () => {
+export interface AbGrupoOpcoesProps {
+    opcoes: AbGrupoOpcao[]
+}
+
+export const AbGrupoOpcoes = ({ opcoes }: AbGrupoOpcoesProps) => {
     return (
         <>
-            <Opcao selecionado={false}>
-                <header>E-book</header>
-                <div><strong>R$ 00,00</strong></div>
-                <footer>.pdf, .epub, .mob</footer>
-            </Opcao>
-            <Opcao selecionado={true}>
-                <header>E-book</header>
-                <div><strong>R$ 00,00</strong></div>
-                <footer>.pdf, .epub, .mob</footer>
-            </Opcao>
-            <Opcao selecionado={false}>
-                <header>E-book</header>
-                <div><strong>R$ 00,00</strong></div>
-                <footer>.pdf, .epub, .mob</footer>
-            </Opcao>
+            {opcoes.map(opcao => (
+                <Opcao key={opcao.id} selecionado={false}>
+                    <header>{opcao.titulo}</header>
+                    <div><strong>{opcao.corpo}</strong></div>
+                    <footer>{opcao.rodape}</footer>
+                </Opcao>
+            ))}
         </>
     )
 }
