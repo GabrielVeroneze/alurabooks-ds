@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Opcao } from './styled'
 
 export interface AbGrupoOpcao {
@@ -10,13 +10,29 @@ export interface AbGrupoOpcao {
 
 export interface AbGrupoOpcoesProps {
     opcoes: AbGrupoOpcao[]
+    valorPadrao?: AbGrupoOpcao | null
+    onChange?: (opcao: AbGrupoOpcao) => void
 }
 
-export const AbGrupoOpcoes = ({ opcoes }: AbGrupoOpcoesProps) => {
+export const AbGrupoOpcoes = ({ opcoes, onChange, valorPadrao = null }: AbGrupoOpcoesProps) => {
+    const [selecao, setSelecao] = useState<AbGrupoOpcao | null>(valorPadrao)
+
+    const aoSelecionar = (opcao: AbGrupoOpcao): void => {
+        setSelecao(opcao)
+
+        if (onChange) {
+            onChange(opcao)
+        }
+    }
+
     return (
         <>
             {opcoes.map(opcao => (
-                <Opcao key={opcao.id} selecionado={false}>
+                <Opcao
+                    key={opcao.id}
+                    selecionado={selecao?.id === opcao.id}
+                    onClick={() => aoSelecionar(opcao)}
+                >
                     <header>{opcao.titulo}</header>
                     <div><strong>{opcao.corpo}</strong></div>
                     <footer>{opcao.rodape}</footer>
