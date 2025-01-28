@@ -1,9 +1,11 @@
 import 'react-app-polyfill/ie11'
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-import { AbBotao, AbCard, AbGrupoOpcoes, AbTag } from '../src'
+import { AbBotao, AbCampoTexto, AbCard, AbGrupoOpcoes, AbTag } from '../src'
 
 const App = () => {
+    const [email, setEmail] = React.useState('')
+
     return (
         <div>
             <AbBotao texto="Clique Aqui!" tipo="primario" />
@@ -32,6 +34,14 @@ const App = () => {
                         rodape: '.pdf, .epub, .mob'
                     }
                 ]}
+            />
+            <AbCampoTexto
+                id="email"
+                label="E-mail"
+                type="email"
+                placeholder="seuemail@maneiro.com"
+                value={email}
+                onChange={setEmail}
             />
         </div>
     )
