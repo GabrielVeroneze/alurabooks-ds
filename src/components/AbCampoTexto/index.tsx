@@ -1,7 +1,33 @@
 import React from 'react'
+import { CampoWrapper, Input, Label } from './styled'
 
-export const AbCampoTexto = () => {
+export interface AbCampoTextoProps {
+    id: string
+    label: string
+    type?: 'text' | 'email' | 'password' | 'date'
+    placeholder?: string
+    value: string
+    onChange: (value: string) => void
+}
+
+export const AbCampoTexto = ({
+    id,
+    label,
+    type = 'text',
+    placeholder,
+    value,
+    onChange
+}: AbCampoTextoProps) => {
     return (
-        <div>AbCampoTexto</div>
+        <CampoWrapper>
+            <Label htmlFor={id}>{label}</Label>
+            <Input
+                id={id}
+                type={type}
+                placeholder={placeholder}
+                value={value}
+                onChange={evento => onChange(evento.target.value)}
+            />
+        </CampoWrapper>
     )
 }
