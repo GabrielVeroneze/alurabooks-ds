@@ -1,8 +1,9 @@
 import React from 'react'
+import { Input } from './styled'
 
 const AbInputQuantidade = () => {
     return (
-        <div>AbInputQuantidade</div>
+        <Input>AbInputQuantidade</Input>
     )
 }
 
