@@ -18,6 +18,10 @@ export const AbCampoTexto = ({
     value,
     onChange
 }: AbCampoTextoProps) => {
+    const handleChange = (evento: React.ChangeEvent<HTMLInputElement>) => {
+        onChange(evento.target.value)
+    }
+
     return (
         <CampoWrapper>
             <Label htmlFor={id}>{label}</Label>
@@ -26,7 +30,7 @@ export const AbCampoTexto = ({
                 type={type}
                 placeholder={placeholder}
                 value={value}
-                onChange={evento => onChange(evento.target.value)}
+                onChange={handleChange}
             />
         </CampoWrapper>
     )
