@@ -1,10 +1,11 @@
 import 'react-app-polyfill/ie11'
 import * as React from 'react'
 import * as ReactDOM from 'react-dom'
-import { AbBotao, AbCampoTexto, AbCard, AbGrupoOpcoes, AbTag } from '../src'
+import { AbBotao, AbCampoTexto, AbCard, AbGrupoOpcoes, AbInputQuantidade, AbTag } from '../src'
 
 const App = () => {
     const [email, setEmail] = React.useState('')
+    const [quantidade, setQuantidade] = React.useState(1)
 
     return (
         <div>
@@ -43,6 +44,7 @@ const App = () => {
                 value={email}
                 onChange={setEmail}
             />
+            <AbInputQuantidade onChange={setQuantidade} />
         </div>
     )
 }
