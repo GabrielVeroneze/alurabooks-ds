@@ -1,3 +1,19 @@
+# v0.3.4 (Thu Jan 30 2025)
+
+#### ⚠️ Pushed to `main`
+
+- ✨ feat: adiciona story para AbInputQuantidade ([@GabrielVeroneze](https://github.com/GabrielVeroneze))
+- ✨ feat: adiciona AbInputQuantidade ao exemplo ([@GabrielVeroneze](https://github.com/GabrielVeroneze))
+- ✨ feat: exporta AbInputQuantidade ([@GabrielVeroneze](https://github.com/GabrielVeroneze))
+- 💄 feat: adiciona estilos para o componente AbInputQuantidade ([@GabrielVeroneze](https://github.com/GabrielVeroneze))
+- ✨ feat: adiciona controle de quantidade em AbInputQuantidade ([@GabrielVeroneze](https://github.com/GabrielVeroneze))
+
+#### Authors: 1
+
+- Gabriel Veroneze  ([@GabrielVeroneze](https://github.com/GabrielVeroneze))
+
+---
+
 # v0.3.3 (Wed Jan 29 2025)
 
 #### ⚠️ Pushed to `main`
