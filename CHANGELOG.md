@@ -1,3 +1,16 @@
+# v0.3.5 (Fri Jan 31 2025)
+
+#### ⚠️ Pushed to `main`
+
+- 💄 feat: adiciona estilos para o componente AbModal ([@GabrielVeroneze](https://github.com/GabrielVeroneze))
+- ✨ feat: cria componente AbModal ([@GabrielVeroneze](https://github.com/GabrielVeroneze))
+
+#### Authors: 1
+
+- Gabriel Veroneze  ([@GabrielVeroneze](https://github.com/GabrielVeroneze))
+
+---
+
 # v0.3.4 (Thu Jan 30 2025)
 
 #### ⚠️ Pushed to `main`
